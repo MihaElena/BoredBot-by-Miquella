@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+}
+
+main {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 60px;
+    font-family: "Oxygen", sans-serif;
+    /* uigradients.com */
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.happy {
+    font-family: "Happy Monkey", system-ui;
+    background: #FDFC47;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
+
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid darkred;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ===================
+       Typography
+   ===================*/
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+.exciting {
+    color: #ff4081;
+    animation: pulse 1s infinite alternate;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+
+  .exciting2 {
+    color: #6940ff;
+    animation: pulse 1s infinite alternate;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1.5); }
+    100% { transform: scale(1.2); }
+  }
+
+/* ===================
+    Emoji robot jumps
+   ===================*/
+   .hop {
+    display: inline-block;
+    animation: hop 0.6s infinite ease-in-out;
+  }
+  
+  @keyframes hop {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+
+
+  .emoji-dancer {
+    font-size: 5rem; /* mai mare */
+    position: absolute;
+    animation: danceAround 6s infinite ease-in-out;
+    z-index: 10;
+  }
+  
+  @keyframes danceAround {
+    0% {
+      top: 10%;
+      left: 10%;
+      transform: rotate(0deg);
+    }
+    25% {
+      top: 30%;
+      left: 70%;
+      transform: rotate(20deg);
+    }
+    50% {
+      top: 60%;
+      left: 40%;
+      transform: rotate(-20deg);
+    }
+    75% {
+      top: 80%;
+      left: 80%;
+      transform: rotate(30deg);
+    }
+    100% {
+      top: 10%;
+      left: 10%;
+      transform: rotate(0deg);
+    }
+  }
+  
+
+
+
+  .emoji-burst {
+    font-size: 1.5rem;
+    animation: fly 2s ease-out forwards;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  @keyframes fly {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    100% { transform: translate(-200px, -200px) scale(3); opacity: 0; }
+  }
+  
